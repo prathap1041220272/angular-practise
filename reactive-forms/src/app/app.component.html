@@ -1,0 +1,12 @@
+<div>
+  <form [formGroup]="myForm" ngForm>
+    <input email type="email" formControlName="email">
+    <input type="password" formControlName="password">
+    <div formArrayName="books">
+    <input type="text" [formGroupName]="i" formControlName="name" *ngFor="let x of books.controls; let i = index;">
+    </div>
+    <button [disabled]="myForm.invalid" type="submit">Submit</button>
+  </form>
+</div>
+
+<button (click)="addNewBook()">Add</button>
