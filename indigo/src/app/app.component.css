@@ -1,0 +1,51 @@
+.nav-height{
+	margin-top: -10px;
+}
+.element {
+  font-size: 14px;
+  margin-left: 10px;
+  padding: 15px;
+}
+
+.element:hover {
+  background-color: #454545;
+  border-radius: 3px;
+  color: white !important;
+}
+
+.element:active {
+  background-color: grey;
+  color: white;
+}
+.dot-social-media-icons>.fab{
+	display: inline-block;
+	color: white !important;
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	text-align: center;
+	border: 2px solid white;
+}
+.dot-social-media-icons .fab {
+	/*padding: 10px;*/
+}
+.social-media{
+	background-color: #2E86C1;
+	color: white;
+}
+.media-content{
+	display: flex;
+	flex-wrap: wrap;
+}
+.contact{
+	opacity: 0.9;
+	color: white;
+	font-size: 15px;
+	margin-top: 4px;
+	margin-left: 18px;
+}
+.icon-space{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 3px
+}
