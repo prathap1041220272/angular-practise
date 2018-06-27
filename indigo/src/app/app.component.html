@@ -1,59 +1,61 @@
-<div class="container">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light nav-height">
-  <a class="navbar-brand" href="#"><img src="../assets/INDIGO-DIGITAL.png" style="width: 180px;"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse " id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-    </ul>
-    <ul class="navbar-nav ">
-      <li class="nav-item">
-        <a class="nav-link active element" href="#">Home</a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link active element" href="#">About Us</a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link active element" href="#">Photostories</a>
-      </li>
-      <li class="nav-item dropdown ">
-        <a class="nav-link dropdown-toggle active element" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="../assets/INDIGO-DIGITAL.png" style="width: 200px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav mt-2 mr-auto mt-lg-0">
+      </ul>
+      <ul class="navbar-nav mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">Photostories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">Disabled</a>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle" routerLink="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Categories
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item " href="#">Commercial</a>
-          <a class="dropdown-item " href="#">Corporate</a>
-          <a class="dropdown-item " href="#">Event</a>
-          <a class="dropdown-item " href="#">Birthday</a>
-          <a class="dropdown-item " href="#">Travel</a>
-          <a class="dropdown-item " href="#">Special Occasion</a>
-          <a class="dropdown-item " href="#">Nature</a>
-          <a class="dropdown-item " href="#">Wedding</a>
-        </div>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link active element" href="#">Contact Us</a>
-      </li>
-      <li class="nav-item ">
-        <a href="#" class="nav-link active element"><i class="fas fa-sign-in-alt"> </i> Photographer SignUp & Sign In</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-</div>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink="/">Commercial</a>
+            <a class="dropdown-item" routerLink="/">Corporate</a>
+            <a class="dropdown-item" routerLink="/">Event</a>
+            <a class="dropdown-item" routerLink="/">Birthday</a>
+            <a class="dropdown-item" routerLink="/">Travel</a>
+            <a class="dropdown-item" routerLink="/">Special Occasion</a>
+            <a class="dropdown-item" routerLink="/">Nature</a>
+            <a class="dropdown-item" routerLink="/">Wedding</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/login" class="nav-link"><i class="fas fa-sign-in-alt"> </i> Photographer's SignUp & Sign In</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-<div class="col social-media">
-  <div class="container">
-  <div class="row">
-    <div class="col-sm-10 media-content">
-    <span class="contact">Contact for any query : +234 (0) 80-9876-0000 Or <a href="#" style="color: white;"> indigo@indigoafrica.net</a></span>
-  </div>
-    <div class="col-sm-2 icon-space">
-    <a href="#" class="dot-social-media-icons" ><i class="fab fa-facebook-f"></i></a>
-    <a href="#" class="dot-social-media-icons"><i class="fab fa-google-plus-g"></i></a>
-    <a href="#" class="dot-social-media-icons"><i class="fab fa-linkedin-in"></i></a>
-  </div>
+<div class="col social-media-container">
+    <div class="row">
+      <div class="col-sm-10 media-content">
+        <span class="contact">Contact for any query : +234 (0) 80-9876-0000 Or 
+      <a href="#" style="color: white;"> indigo@indigoafrica.net</a>
+    </span>
+      </div>
+      <div class="col-sm-2 icon-space">
+        <a href="https://www.facebook.com/people/IndigoDigital-Press-Nigeria/100005432116402?_rdc=1&_rdr" target="_blank" class="dot-social-media-icons"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="dot-social-media-icons"><i style="background-color: #E74C3C" class="fab fa-google-plus-g"></i></a>
+        <a href="#" class="dot-social-media-icons"><i style="background-color: #5499C7" class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
 </div>
-</div>
-</div>
+<router-outlet></router-outlet>

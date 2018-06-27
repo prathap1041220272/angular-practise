@@ -1,51 +1,56 @@
-.nav-height{
-	margin-top: -10px;
-}
-.element {
-  font-size: 14px;
-  margin-left: 10px;
-  padding: 15px;
+@media(min-width: 980px) {
+  .nav-link {
+    max-height: 79px;
+    padding: 21px 20px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    line-height: 2.5;
+  }
+
+  .navbar.navbar-light {
+  	max-height: 78px;
+  }
 }
 
-.element:hover {
-  background-color: #454545;
-  border-radius: 3px;
+
+.nav-link:hover {
+  color: black !important;
+  background-color: #e2dfdf;
+  border-radius: 2px;
+}
+
+.nav-link:active {
+  background-color: #A6ACAF;
   color: white !important;
+  border-radius: 2px;
 }
 
-.element:active {
-  background-color: grey;
+.dot-social-media-icons>.fab {
+  display: inline-block;
+  color: white !important;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  text-align: center;
+  border: 2px solid white;
+}
+
+.social-media-container {
+  background-color: #2E86C1;
   color: white;
 }
-.dot-social-media-icons>.fab{
-	display: inline-block;
-	color: white !important;
-	width: 1.5em;
-	height: 1.5em;
-	border-radius: 100%;
-	text-align: center;
-	border: 2px solid white;
+
+.contact {
+  opacity: 0.9;
+  color: white;
+  font-size: 15px;
+  margin-top: 4px;
+  display: flex;
+  flex-wrap: wrap;
 }
-.dot-social-media-icons .fab {
-	/*padding: 10px;*/
-}
-.social-media{
-	background-color: #2E86C1;
-	color: white;
-}
-.media-content{
-	display: flex;
-	flex-wrap: wrap;
-}
-.contact{
-	opacity: 0.9;
-	color: white;
-	font-size: 15px;
-	margin-top: 4px;
-	margin-left: 18px;
-}
-.icon-space{
-	display: flex;
-	justify-content: space-around;
-	margin-bottom: 3px
+
+.icon-space {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3px
 }
