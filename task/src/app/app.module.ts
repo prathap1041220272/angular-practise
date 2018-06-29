@@ -9,9 +9,11 @@ import {MatButtonModule,
  MatFormFieldModule,
  MatAutocompleteModule,
  MatInputModule,
- MatCheckboxModule,
  MatGridListModule
 } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ViewServiceService } from './services/view-service.service';
+
 
 @NgModule({
   declarations: [
@@ -28,10 +30,10 @@ import {MatButtonModule,
     MatCheckboxModule,
     MatFormFieldModule,
     MatAutocompleteModule,
-    MatCheckboxModule,
-    MatGridListModule
+    MatGridListModule,
+    BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [ViewServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

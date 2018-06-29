@@ -1,3 +1,4 @@
-<app-details></app-details>
+<app-details (dataSubmit)="onData()"></app-details>
 <hr>
-<app-view-details></app-view-details>
+<!-- <app-view-details [data]="formData"></app-view-details>-->
+<app-view-details (dataSubmit)="recivedata($event)"></app-view-details>

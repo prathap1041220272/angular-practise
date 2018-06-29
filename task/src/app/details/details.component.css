@@ -6,13 +6,11 @@
 .example-container > * {
   width: 100%;
   margin-top: 60px;
+  margin-bottom: 50px
 }
 .sign{
-	position: relative;
-	top: 170px;
 	width: 400px;
-	left: 60px;
 }
 button{
-	margin-top: 55px !important;
+	margin-top: 5px !important;
 }
